@@ -2,13 +2,6 @@
 /creepy-noise.wav
 /down.jpg
 /extra/
-/fortune teller.png
-/gridworld.jar
-/jeopardy.wav
-/left.jpg
-/moo.wav
-/right.jpg
-/up.jpg
 /BookOfIllusions.class
 /Calculator.class
 /CalculatorRunner.class
@@ -16,6 +9,15 @@
 /FortuneTeller.class
 /Jeopardy.class
 /Movie.class
+/NetflixMovie.class
 /NetflixQueue.class
 /SimonSays.class
-/NetflixMovie.class
+/fortune teller.png
+/gridworld.jar
+/jeopardy.wav
+/left.jpg
+/moo.wav
+/right.jpg
+/up.jpg
+/NastySurprise.class
+/MoleWck.class
