@@ -21,8 +21,7 @@ public class MoleWck implements ActionListener {
 	
 	JFrame frame= new JFrame();
 	JPanel panel= new JPanel();
-	JButton button1= new JButton("button1");
-	JButton button2= new JButton("button2");
+	JButton button2= new JButton("MOLE!");
 	public static void main(String[] args) {
 new MoleWck().createUI();
 MoleWck mole= new MoleWck();
@@ -31,28 +30,53 @@ MoleWck mole= new MoleWck();
 
 	public void createUI()
 	{
+		frame= new JFrame();
+		panel= new JPanel();
 		
 		Random randy= new Random();
 		int Randy= randy.nextInt(20);
+		int Randum= randy.nextInt(Randy);
+	
 		
-		button1.addActionListener(this);
-		button2.addActionListener(this);
-		panel.add(button1);
-		panel.add(button2);
+		for(int i=0; i<Randy; i+=1) {
+			
+		
+			if(i==Randum) {
+				button2= new JButton("MOLE!");
+				button2.addActionListener(this);
+				panel.add(button2);
+			}
+			else{
+				JButton button1= new JButton("nothing");
+				panel.add(button1);
+				
+			}
+			
+		}
+		
 		frame.add(panel);
 		frame.setVisible(true);
-		frame.pack();
+		frame.setSize(300, 300);
+	
+		
 		
 		
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		if(e.getSource()==button1) {
+		
+		if( e.getSource()==button2) {
+		JOptionPane.showMessageDialog(null, "u killed a mole, JEEEZZUS");
+		frame.removeAll();
+		frame.dispose();
+		
+	
+		createUI();
 			
 		}
-		else if( e.getSource()==button2) {
-		
+		else {
+			playSound(null);
 		}
 		}
 	private void endGame(Date timeAtStart, int molesWhacked) {
