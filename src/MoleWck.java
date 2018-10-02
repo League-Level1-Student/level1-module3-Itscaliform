@@ -18,7 +18,9 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class MoleWck implements ActionListener {
-	
+	int oof=0;
+	int of=0;
+	Date dab= new Date();
 	JFrame frame= new JFrame();
 	JPanel panel= new JPanel();
 	JButton button2= new JButton("MOLE!");
@@ -32,7 +34,7 @@ MoleWck mole= new MoleWck();
 	{
 		frame= new JFrame();
 		panel= new JPanel();
-		
+	
 		Random randy= new Random();
 		int Randy= randy.nextInt(20);
 		int Randum= randy.nextInt(Randy);
@@ -66,17 +68,29 @@ MoleWck mole= new MoleWck();
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		
-		if( e.getSource()==button2) {
-		JOptionPane.showMessageDialog(null, "u killed a mole, JEEEZZUS");
+		
+	
+	    if( e.getSource()==button2) {
+	    	oof++;
+	    	playSound("bu.wav");
+	    	if(oof>=10) {
+	    		
+	    		of++;
+	    		endGame(dab,of);
+	    		
+	    	}
+	    	else {
+		//JOptionPane.showMessageDialog(null, "u killed a mole, JEEEZZUS");
 		frame.removeAll();
 		frame.dispose();
 		
 	
 		createUI();
-			
+	    	}
+		
 		}
 		else {
-			playSound(null);
+			speak("Yeeer");
 		}
 		}
 	private void endGame(Date timeAtStart, int molesWhacked) {

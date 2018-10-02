@@ -1,10 +1,6 @@
-/Recipes.html
-/creepy-noise.wav
-/down.jpg
-/extra/
-/fortune teller.png
-/gridworld.jar
-/jeopardy.wav
+/moo.wav
+/right.jpg
+/up.jpg
 /BookOfIllusions.class
 /Calculator.class
 /CalculatorRunner.class
@@ -17,7 +13,6 @@
 /NetflixMovie.class
 /NetflixQueue.class
 /SimonSays.class
-/left.jpg
-/moo.wav
-/right.jpg
-/up.jpg
+/extra/
+/bu.wav
+/SlotMachines.class
