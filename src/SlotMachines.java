@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Random;
 
 import javax.imageio.ImageIO;
 import javax.swing.Icon;
@@ -53,7 +54,8 @@ public void CreateUI() {
 	frame.add(panel);
 	frame.setVisible(true);
 	frame.setSize(1000, 1000);
-	
+	Random randy = new Random();
+	int r= randy.nextInt(4);
 }
 
 void SPIN(){
@@ -76,6 +78,9 @@ public static ImageIcon LoadImage(String fileName) {
 @Override
 public void actionPerformed(ActionEvent arg0) {
 	// TODO Auto-generated method stub
-arg0.getSource(button);
+if(arg0.getSource()==button ) {
+	
+	
+}
 }
 }
